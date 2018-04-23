@@ -36,7 +36,7 @@ function get(call,callback){
   var obj;
  MongoClient.connect(url, function(err, db) {
   if (err) throw err;
-  var dbo = db.db("admin");
+  var dbo = db.db("test");
   
   dbo.collection("customers").find( {"_id": ObjectId('5ad880f35676d919786162fc')} ).toArray(function(err, result) {
     if (err) throw err;
