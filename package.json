@@ -1,0 +1,17 @@
+{
+  "name": "samplegrpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "greeter_client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "grpc": "^1.10.1",
+    "install": "^0.11.0",
+    "mongodb": "^3.0.7",
+    "npm": "^5.8.0"
+  }
+}

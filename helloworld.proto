@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.helloworld";
+option java_outer_classname = "HelloWorldProto";
+option objc_class_prefix = "HLW";
+
+package helloworld;
+
+
+service Greeter {
+ 
+  rpc Insert (InsertRequest) returns (InsertReply) {}
+
+}
+
+
+
+
+
+//--------------------------------------------------------
+
+// The request message containing the user's name.
+message InsertRequest {
+  string name =1;
+  string address=2;
+  string location =3;
+  string productID =4;
+  string params =5;
+}
+// The response message containing the greetings
+message InsertReply {
+  string message = 1;
+}
+
+
+service getlist{
+  rpc get(getRequest) returns (getReply){}
+}
+message getRequest{
+string name=1;
+}
+message getReply{
+  string message=1;
+}
